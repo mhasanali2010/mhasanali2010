@@ -1,7 +1,7 @@
 ## Hi there 👋
 I'm Muhammad Hasan.\
 Python Programmer.\
-Currently learning Web Development.\
+Currently learning Web Development.
 ## Notable Python Projects
 - [Nixscribe](https://github.com/mhasanali2010/nixscribe)
 - [math-evaluate](https://github.com/mhasanali2010/math-evaluate)
