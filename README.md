@@ -10,4 +10,4 @@ Currently learning Web Development.
 ## Collaborated on
 - [Tetris-Bugs](https://github.com/zishankadri/tetris-bugs)
 ## Reach Me
-At Discord: Ryushison (@ryushison).
+On Discord: Ryushison (@ryushison). Send a friend request and DM.
