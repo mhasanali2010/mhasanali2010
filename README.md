@@ -6,7 +6,7 @@ Currently learning Web Development.
 - [Nixscribe](https://github.com/mhasanali2010/nixscribe)
 - [math-evaluate](https://github.com/mhasanali2010/math-evaluate)
 ## Web Dev Projects:
-- [WebApp Simple Calculator](https://github.com/mhasanali2010/webapp-simple-calculator)
+- [WebApp Simple Calculator](https://webapp-simple-calculator.netlify.app)
 ## Collaborated on
 - [Tetris-Bugs](https://github.com/zishankadri/tetris-bugs)
 ## Reach Me
