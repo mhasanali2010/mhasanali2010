@@ -8,6 +8,6 @@ Currently learning Web Development.
 ## Notable Web Dev Projects:
 - [WebApp Simple Calculator](https://webapp-simple-calculator.netlify.app)
 ## Notable Project I Collaborated on
-- [Tetris-Bugs](https://github.com/zishankadri/tetris-bugs)
+- [Tetris-Bugs](https://github.com/mhasanali2010/tetris-bugs)
 ## Reach Me
 On Discord: Ryushison (@ryushison). Send a friend request and DM.
