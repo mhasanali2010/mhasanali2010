@@ -8,7 +8,7 @@ Backend Developer.
 - [math-evaluate](https://github.com/mhaxanali/math-evaluate)
 
 ## Notable Web Dev Projects
-- [WebApp Simple Calculator](https://webapp-simple-calculator.netlify.app)
+- [WebApp Simple Calculator](https://github.com/mhaxanali/webapp-simple-calculator)
 
 ## Notable Project I Collaborated On
 - [Tetris-Bugs](https://github.com/mhaxanali/tetris-bugs)  
@@ -18,10 +18,9 @@ Backend Developer.
   - Project theme: *“Wrong Tool for the Job”* — turning Tetris into a functioning **code editor**.
 
 - [Sir Lancebot](https://github.com/python-discord/sir-lancebot)  
-  🗡️ *Open Source Contribution:* Added `.quote daily` and `.quote random` commands using the [ZenQuotes.io](https://zenquotes.io/) API.  
-  - Implemented API integration and caching for daily quotes (UTC-based).  
-  - Designed Discord embeds with attribution and robust error handling.  
-  - Merged into `main` by Python Discord maintainers.  
+  🗡️ *Open Source Contribution:*
+  - Added `.quote daily` and `.quote random` commands using the [ZenQuotes.io](https://zenquotes.io/) API.  
+  - Improved `.gh repo` command to suppoert aliases, default org and most starred repo fallback.
 
 ## Reach Me
 📧 mhasanali2010@gmail.com
