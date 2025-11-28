@@ -1,14 +1,13 @@
 ## Hi there 👋
 I'm Muhammad Hasan.\
-Python Programmer.\
+Python / Go Programmer.\
 Backend Developer.
 
-## Notable Python Projects
+## Notable Personal Projects
 - [Nixscribe](https://github.com/mhaxanali/nixscribe)
 - [math-evaluate](https://github.com/mhaxanali/math-evaluate)
-
-## Notable Web Dev Projects
 - [WebApp Simple Calculator](https://github.com/mhaxanali/webapp-simple-calculator)
+- [go-math-eval](https://github.com/mhaxanali/go-math-eval)
 
 ## Notable Project I Collaborated On
 - [Tetris-Bugs](https://github.com/mhaxanali/tetris-bugs)  
@@ -24,3 +23,4 @@ Backend Developer.
 
 ## Reach Me
 📧 mhasanali2010@gmail.com
+Discord: [ryushison](https://discord.com/users/764492206513455107)
