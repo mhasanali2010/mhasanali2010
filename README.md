@@ -22,5 +22,5 @@ Backend Developer.
   - Improved `.gh repo` command to suppoert aliases, default org and most starred repo fallback.
 
 ## Reach Me
-📧 mhasanali2010@gmail.com
+📧 mhasanali2010@gmail.com\
 Discord: [ryushison](https://discord.com/users/764492206513455107)
