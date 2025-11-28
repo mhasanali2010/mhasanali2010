@@ -1,7 +1,6 @@
 ## Hi there 👋
 I'm Muhammad Hasan.\
-Python / Go Programmer.\
-Backend Developer.
+15. Python/Go developer. OSS contributor. CodeJam finalist.
 
 ## Notable Personal Projects
 - [Nixscribe](https://github.com/mhaxanali/nixscribe)
@@ -9,7 +8,7 @@ Backend Developer.
 - [WebApp Simple Calculator](https://github.com/mhaxanali/webapp-simple-calculator)
 - [go-math-eval](https://github.com/mhaxanali/go-math-eval)
 
-## Notable Project I Collaborated On
+## Notable Projects I Collaborated On
 - [Tetris-Bugs](https://github.com/mhaxanali/tetris-bugs)  
   👾 *Python Discord CodeJam 2025 Finalist (Top 3) — Team Grand Gardenias*  
   - Contributed **timer logic** and **pause screen** implementation in a browser-based Tetris-style code editor built with **PyScript**.   
@@ -19,7 +18,7 @@ Backend Developer.
 - [Sir Lancebot](https://github.com/python-discord/sir-lancebot)  
   🗡️ *Open Source Contribution:*
   - Added `.quote daily` and `.quote random` commands using the [ZenQuotes.io](https://zenquotes.io/) API.  
-  - Improved `.gh repo` command to suppoert aliases, default org and most starred repo fallback.
+  - Improved `.gh repo` command to support aliases, default org and most starred repo fallback.
 
 ## Reach Me
 📧 mhasanali2010@gmail.com\
