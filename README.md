@@ -3,6 +3,7 @@ I'm Muhammad Hasan.\
 15. Python/Go developer. OSS contributor. CodeJam finalist.
 
 ## Notable Personal Projects
+- [DNS Resolver](https://github.com/mhaxanali/dns-resolver)
 - [Nixscribe](https://github.com/mhaxanali/nixscribe)
 - [math-evaluate](https://github.com/mhaxanali/math-evaluate)
 - [WebApp Simple Calculator](https://github.com/mhaxanali/webapp-simple-calculator)
