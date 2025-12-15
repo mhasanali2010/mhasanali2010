@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swirling Letters Animation</title>
+<style>
+  body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    font-family: monospace;
+  }
+  canvas {
+    display: block;
+  }
+</style>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+
+<script>
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+
+let W = canvas.width = window.innerWidth;
+let H = canvas.height = window.innerHeight;
+
+const targetWord = "mhaxanali";
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+const particles = [];
+const particleCount = 1000;
+
+let frame = 0;
+let forming = true;
+let holdFrames = 60;
+
+// Particle class
+class Particle {
+    constructor() {
+        this.x = Math.random() * W;
+        this.y = Math.random() * H;
+        this.vx = (Math.random() - 0.5) * 2;
+        this.vy = (Math.random() - 0.5) * 2;
+        this.char = letters[Math.floor(Math.random() * letters.length)];
+        this.size = Math.random() * 18 + 8;
+        this.targetX = 0;
+        this.targetY = 0;
+    }
+
+    update() {
+        if (forming) {
+            // move toward target
+            this.x += (this.targetX - this.x) * 0.08;
+            this.y += (this.targetY - this.y) * 0.08;
+        } else {
+            // random swirl
+            this.x += this.vx;
+            this.y += this.vy;
+            if (this.x < 0 || this.x > W) this.vx *= -1;
+            if (this.y < 0 || this.y > H) this.vy *= -1;
+        }
+    }
+
+    draw() {
+        ctx.fillText(this.char, this.x, this.y);
+    }
+}
+
+// Initialize particles
+for (let i = 0; i < particleCount; i++) {
+    particles.push(new Particle());
+}
+
+// Function to map particles to text
+function mapParticlesToText() {
+    const tempCanvas = document.createElement('canvas');
+    const tempCtx = tempCanvas.getContext('2d');
+    tempCanvas.width = W;
+    tempCanvas.height = H;
+
+    tempCtx.fillStyle = 'white';
+    tempCtx.font = "bold 120px monospace";
+    tempCtx.textAlign = "center";
+    tempCtx.textBaseline = "middle";
+    tempCtx.fillText(targetWord, W/2, H/2);
+
+    const imageData = tempCtx.getImageData(0, 0, W, H).data;
+    let positions = [];
+    for (let y = 0; y < H; y += 6) {
+        for (let x = 0; x < W; x += 6) {
+            const alpha = imageData[(y * W + x) * 4 + 3];
+            if (alpha > 128) {
+                positions.push({x, y});
+            }
+        }
+    }
+
+    // assign positions to particles
+    for (let i = 0; i < particles.length; i++) {
+        const pos = positions[Math.floor(Math.random() * positions.length)];
+        particles[i].targetX = pos.x;
+        particles[i].targetY = pos.y;
+        particles[i].char = letters[Math.floor(Math.random() * letters.length)];
+    }
+}
+
+mapParticlesToText();
+
+function animate() {
+    ctx.fillStyle = 'rgba(17,17,17,0.3)';
+    ctx.fillRect(0, 0, W, H);
+
+    ctx.fillStyle = 'white';
+    ctx.font = "bold 18px monospace";
+
+    for (let p of particles) {
+        p.update();
+        p.draw();
+    }
+
+    frame++;
+    if (forming && frame > holdFrames + 60) {
+        forming = false;
+        frame = 0;
+    } else if (!forming && frame > holdFrames + 60) {
+        forming = true;
+        mapParticlesToText();
+        frame = 0;
+    }
+
+    requestAnimationFrame(animate);
+}
+
+animate();
+
+window.addEventListener('resize', () => {
+    W = canvas.width = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+    mapParticlesToText();
+});
+</script>
+</body>
+</html>
