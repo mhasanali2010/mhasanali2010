@@ -1,4 +1,4 @@
-![](assets/mhaxanali.gif)
+![gif](assets/mhaxanali.gif)
 ## Hi there 👋
 I'm Muhammad Hasan.\
 15. Python/Go developer. OSS contributor. CodeJam finalist.
