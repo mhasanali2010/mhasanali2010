@@ -21,6 +21,15 @@ I'm Muhammad Hasan.\
   🗡️ *Open Source Contribution:*
   - Added `.quote daily` and `.quote random` commands using the [ZenQuotes.io](https://zenquotes.io/) API.  
   - Improved `.gh repo` command to support aliases, default org and most starred repo fallback.
+ 
+## Featured Projects
+
+### [AI Video Generator](https://github.com/mhaxanali/video-generator)
+A modular AI-powered pipeline that orchestrates script generation, image sourcing, TTS, and video clipping.
+- Backend: Python orchestration + API integration
+- Frontend: Simple HTML/JS for testing/display
+- Demonstrates: Full-stack thinking, modular design, devops awareness
+- Status: Archived due to API constraints, but showcases architecture and skills
 
 ## Reach Me
 📧 mhasanali2010@gmail.com\
